@@ -11,6 +11,9 @@ public class ReverseNumber {
 
      static void reversed(int n) {
         int rev = 0,rem;
+
+        if(n<0) n = n * -1;
+
         while(n!=0){
             rem=n%10;
             rev=rev*10+rem;
